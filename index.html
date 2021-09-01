@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Represents metadata that allows developer to take control over viewport. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smart Agriculture</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link href="./styles/lstyles.css" rel="stylesheet">
+
+    <!-- Firebase JavaScript SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  </head>
+  
+  <body >
+    <!-- Container for all elements. -->
+    <div class="container">
+
+      <!-- Sign in form -->
+      <div class="form-signin text-center">
+        <h2>Smart Agriculture Authentication</h2>
+
+        <!-- Email address label and input element -->
+        <label for="txtEmail" class="sr-only">Email address</label>
+        <input id="txtEmail" type="email" class="form-control" placeholder="Email address" required autofocus>
+        <!-- Password label and input element -->
+        <label for="txtPassword" class="sr-only">Password</label>
+        <input id="txtPassword" type="password" class="form-control" placeholder="Password" required>
+
+        <!-- Remember me element -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+
+        <!-- Log in button -->
+        <button id="btnLogin" class="btn btn-lg btn-primary btn-block">Log in</button>
+        <!-- Sign up button -->
+        <button id="btnSignup" class="btn btn-lg btn-success btn-block">Sign up</button>
+        <!-- Log out button -->
+        <button id="btnLogout" class="btn btn-lg btn-danger btn-block hide">Log out</button>
+      </div>
+    </div>
+
+    <!-- Application code -->
+    <script src="./javascripts/app.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,219 @@
+body {
+    background-color: #f3f5f7;
+    font-family: 'Poppins', sans-serif;
+  }
+  .Smart{
+    line-height: 17pt;
+    text-align: center;
+    padding-top: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+.Agriculture{
+    line-height: 17pt;
+    text-align: center;
+    padding-bottom: 30%;
+    font-family:  'Poppins', sans-serif;
+}
+
+#link{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10%;
+   
+}  
+  
+  .card {
+    background: linear-gradient(-45deg, #5555FF, #9787FF);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    transform: translate(-40%, 10%);
+    width: 550px;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* hide limit values on X axis */
+  .card #canvas {
+    margin-left: -30px;
+    margin-right: -30px;
+    width: 360px!important;
+  }
+  
+  .card .about {
+    height: 185px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card .about h3,
+  .card .about .lead {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  
+  .card .about h3 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .card .about .lead {
+    color: #eee;
+  }
+  
+  .card .info {
+    float: left;
+    padding: 10px 30px 10px 0;
+  }
+  
+  .card .info p {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+  }
+  
+  .legends {
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  
+  .legend {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+  
+  .legend--this {
+    background-color: #5555FF;
+  }
+  
+  .legend--prev {
+    background-color: #FF55B8;
+  }
+  
+  .axis {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .axis .tick {
+    flex: 1;
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+  }
+  
+  .axis .tick::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .axis .tick .value {
+    transform: translateY(-240px);
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: #fff;
+    border-radius: 2px;
+    width: 100%;
+    line-height: 20px;
+  }
+  
+  .axis .tick:hover .value.value--this {
+    transform: translateY(-160px);
+    display: block;
+    opacity: 0.4;
+  }
+  
+  .value.value--this {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .day-number {
+    display: block;
+  }
+  
+  .day-name {
+    display: block;
+    opacity: 0.4;
+  }
+  
+  /* Animated background, credits: Manuel Pinto, https://codepen.io/P1N2O/pen/pyBNzX */
+  .card {
+    background: linear-gradient(-45deg, #53535e, #2d2c33, #72688d, #3f3434);
+    animation: bg 20s infinite;
+  }
+  
+  .box {
+    width:300px;
+    height:275px;
+    border:10px solid #ccc;
+    border-radius:10px;
+    line-height:200px;
+    text-align:center;
+    color:#ddd;
+    font-size:25px;
+    font-weight:600;
+    text-transform:uppercase;
+    position:relative;
+    overflow:hidden;
+    margin-left: 420%;
+    margin-top: 20%;
+
+  }
+  .box:before {
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#00acee;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:40%;
+    animation:fill 7s ease-in-out infinite;
+    z-index:-1;
+  }
+  @keyframes fill {
+    from {
+      top:250px;
+      transform:translateX(-50%) rotate(0deg);
+    }
+    to {
+      top:-50px;
+      transform:translateX(-50%) rotate(360deg);
+    }
+  }
+
+.Hcard{
+    position: absolute;
+    transform: translate(-20%, 10%);
+    width: 590px;
+    height: 275px;
+}
+.Scard{
+    position: absolute;
+    transform: translate(130%, 10%);
+    width: 400px;
+    height: 275px;
+}
